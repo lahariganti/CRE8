@@ -38,6 +38,9 @@ class Item {
             let newItem = Item(id: json[n]["id"].stringValue)
             newItem.title = json[n]["title"].stringValue
             newItem.content = json[n]["content"].stringValue
+            let user = User()
+            user.parseItemUser(with: json[n]["user"])
+            newItem.user = user
             newItems.append(newItem)
         }
         return newItems

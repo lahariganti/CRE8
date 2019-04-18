@@ -8,4 +8,5 @@ target 'CRE8' do
   # Pods for CRE8
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'SDWebImage'
 end

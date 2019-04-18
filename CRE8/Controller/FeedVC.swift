@@ -33,6 +33,7 @@ extension FeedVC {
         navigationController?.navigationItem.largeTitleDisplayMode = .automatic
 
         title = "CRE8\n\(nameOfMonth)"
+
         navigationController?.navigationBar.largeTitleTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.greenVogue,
             NSAttributedString.Key.font: UIFont(name: "AvenirNext-Bold", size: 40) ?? UIFont.preferredFont(forTextStyle: .largeTitle)
@@ -59,6 +60,14 @@ extension FeedVC {
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 650.0
+    }
+
+    func scrollViewShouldScrollToTop(_ scrollView: UIScrollView) -> Bool {
+        return true
+    }
+
+    func scrollViewDidScrollToTop(_ scrollView: UIScrollView) {
+        scrollView.contentOffset.y = 0.0
     }
 }
 

@@ -7,7 +7,18 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 class User {
-    
+    var id: String?
+    var username: String?
+    var avatarURL: String?
+
+    func parseItemUser(with itemUser: JSON) {
+        id = itemUser["id"].stringValue
+        username = itemUser["username"].stringValue
+        avatarURL = itemUser["avatarURL"].stringValue
+    }
 }
+
+
