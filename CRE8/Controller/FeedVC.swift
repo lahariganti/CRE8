@@ -29,9 +29,8 @@ extension FeedVC {
         dateFormatter.dateFormat = "LLLL"
         let nameOfMonth = dateFormatter.string(from: now)
 
-        title = nameOfMonth
-
         navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.tintColor = .greenVogue
         navigationController?.navigationItem.largeTitleDisplayMode = .automatic
 
         title = "CRE8\n\(nameOfMonth)"
@@ -60,7 +59,7 @@ extension FeedVC {
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 683.0
+        return 575.0
     }
 }
 

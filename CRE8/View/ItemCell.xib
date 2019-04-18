@@ -12,107 +12,121 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="495" id="G4D-xU-6xI" userLabel="ItemCell" customClass="ItemCell" customModule="CRE8" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="466" height="683"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="390" id="G4D-xU-6xI" userLabel="ItemCell" customClass="ItemCell" customModule="CRE8" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="425" height="575"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G4D-xU-6xI" id="mrY-mg-ZEf">
-                <rect key="frame" x="0.0" y="0.0" width="466" height="682.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="425" height="574.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="xUQ-Ka-niD">
-                        <rect key="frame" x="16" y="16" width="434" height="426.5"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o19-Ih-2ZJ">
+                        <rect key="frame" x="16" y="16" width="393" height="542.5"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="item_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="C76-EP-YSu">
-                                <rect key="frame" x="0.0" y="0.0" width="434" height="294.00000000000011"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="294" id="l8n-oT-vgb"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHF-OI-SAM">
-                                <rect key="frame" x="0.0" y="326" width="434" height="16"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="2aG-hS-cEx"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Label">
-                                        <attributes>
-                                            <font key="NSFont" size="20" name="AvenirNext-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxU-it-8ff">
-                                <rect key="frame" x="0.0" y="374" width="434" height="52.5"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="title">
-                                        <attributes>
-                                            <font key="NSFont" size="42" name="AvenirNext-DemiBold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="xUQ-Ka-niD">
+                                <rect key="frame" x="16" y="16" width="361" height="426.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="item_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="C76-EP-YSu">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="294.00000000000011"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="294" id="l8n-oT-vgb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHF-OI-SAM">
+                                        <rect key="frame" x="0.0" y="326" width="361" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="2aG-hS-cEx"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Label">
+                                                <attributes>
+                                                    <font key="NSFont" size="20" name="AvenirNext-Medium"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxU-it-8ff">
+                                        <rect key="frame" x="0.0" y="374" width="361" height="52.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="title">
+                                                <attributes>
+                                                    <font key="NSFont" size="42" name="AvenirNext-DemiBold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="28">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="56">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="84">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="112">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="140">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="168">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="196">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="224">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="252">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="280">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="308">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="336">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                    </stackView>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xUQ-Ka-niD" firstAttribute="leading" secondItem="o19-Ih-2ZJ" secondAttribute="leading" constant="16" id="Lxo-6O-u2M"/>
+                            <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="xUQ-Ka-niD" secondAttribute="bottom" constant="100" id="Qrq-wE-otV"/>
+                            <constraint firstItem="xUQ-Ka-niD" firstAttribute="top" secondItem="o19-Ih-2ZJ" secondAttribute="top" constant="16" id="UXL-sQ-BC5"/>
+                            <constraint firstAttribute="trailing" secondItem="xUQ-Ka-niD" secondAttribute="trailing" constant="16" id="s6o-pj-ncA"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="xUQ-Ka-niD" firstAttribute="leading" secondItem="mrY-mg-ZEf" secondAttribute="leading" constant="16" id="F0d-ZU-tHZ"/>
-                    <constraint firstItem="xUQ-Ka-niD" firstAttribute="top" secondItem="mrY-mg-ZEf" secondAttribute="top" constant="16" id="NrW-fF-Pzu"/>
-                    <constraint firstAttribute="trailing" secondItem="xUQ-Ka-niD" secondAttribute="trailing" constant="16" id="Ycj-Fj-pwm"/>
-                    <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="xUQ-Ka-niD" secondAttribute="bottom" constant="240" id="sTw-ba-n1K"/>
+                    <constraint firstAttribute="bottom" secondItem="o19-Ih-2ZJ" secondAttribute="bottom" constant="16" id="DQR-Pr-mbN"/>
+                    <constraint firstAttribute="trailing" secondItem="o19-Ih-2ZJ" secondAttribute="trailing" constant="16" id="k2I-UX-73V"/>
+                    <constraint firstItem="o19-Ih-2ZJ" firstAttribute="leading" secondItem="mrY-mg-ZEf" secondAttribute="leading" constant="16" id="qzj-Ef-yzQ"/>
+                    <constraint firstItem="o19-Ih-2ZJ" firstAttribute="top" secondItem="mrY-mg-ZEf" secondAttribute="top" constant="16" id="sa7-HX-uar"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="0SX-30-XCi"/>
             <connections>
+                <outlet property="cardView" destination="o19-Ih-2ZJ" id="ica-Ti-d26"/>
+                <outlet property="contentView" destination="mrY-mg-ZEf" id="rXL-aC-qsQ"/>
                 <outlet property="creatorNameLabel" destination="OHF-OI-SAM" id="LhU-Du-oKj"/>
                 <outlet property="itemImageView" destination="C76-EP-YSu" id="Jkb-Q7-StT"/>
                 <outlet property="itemTitleLabel" destination="FxU-it-8ff" id="E3K-MK-Qa4"/>
             </connections>
-            <point key="canvasLocation" x="152.17391304347828" y="264.84375"/>
+            <point key="canvasLocation" x="123.18840579710145" y="229.6875"/>
         </tableViewCell>
     </objects>
     <resources>

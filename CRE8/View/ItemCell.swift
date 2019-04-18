@@ -9,13 +9,20 @@
 import UIKit
 
 class ItemCell: UITableViewCell {
+    @IBOutlet weak var cardView: UIView!
+    @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var itemImageView: UIImageView!
     @IBOutlet weak var creatorNameLabel: UILabel!
     @IBOutlet weak var itemTitleLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        itemImageView.layer.cornerRadius = 10
+//        backgroundColor = .darkBackground
+        cardView.layer.cornerRadius = 10
+        cardView.layer.shadowColor = UIColor.bunker.cgColor
+        cardView.layer.shadowOpacity = 0.5
+        cardView.layer.shadowOffset = CGSize(width: 4, height: 4)
+        cardView.layer.shadowRadius = 10
     }
 
     func configure(with item: Item) {
