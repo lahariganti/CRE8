@@ -12,66 +12,110 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="G4D-xU-6xI" userLabel="ItemCell" customClass="ItemCell" customModule="CRE8" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="450" height="250"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="495" id="G4D-xU-6xI" userLabel="ItemCell" customClass="ItemCell" customModule="CRE8" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="466" height="683"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G4D-xU-6xI" id="mrY-mg-ZEf">
-                <rect key="frame" x="0.0" y="0.0" width="450" height="249.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="466" height="682.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fH1-Q7-Mmj" userLabel="Shadow View">
-                        <rect key="frame" x="19" y="16" width="418" height="228.5"/>
-                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QeL-FA-t08">
-                        <rect key="frame" x="16" y="8" width="418" height="233.5"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="xUQ-Ka-niD">
+                        <rect key="frame" x="16" y="16" width="434" height="426.5"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pSW-kB-Ohl" userLabel="Detail BG">
-                                <rect key="frame" x="0.0" y="0.0" width="418" height="234"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fiA-OK-lVm" userLabel="Inner View">
-                                        <rect key="frame" x="3" y="3" width="412" height="228"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="item_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="C76-EP-YSu">
+                                <rect key="frame" x="0.0" y="0.0" width="434" height="294.00000000000011"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="fiA-OK-lVm" secondAttribute="bottom" constant="3" id="AAY-mS-Kqq"/>
-                                    <constraint firstItem="fiA-OK-lVm" firstAttribute="leading" secondItem="pSW-kB-Ohl" secondAttribute="leading" constant="3" id="VEn-B3-8u5"/>
-                                    <constraint firstItem="fiA-OK-lVm" firstAttribute="top" secondItem="pSW-kB-Ohl" secondAttribute="top" constant="3" id="rqq-gb-C3T"/>
-                                    <constraint firstAttribute="trailing" secondItem="fiA-OK-lVm" secondAttribute="trailing" constant="3" id="xfT-Ce-ZZN"/>
+                                    <constraint firstAttribute="height" constant="294" id="l8n-oT-vgb"/>
                                 </constraints>
-                            </view>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHF-OI-SAM">
+                                <rect key="frame" x="0.0" y="326" width="434" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="2aG-hS-cEx"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="AvenirNext-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxU-it-8ff">
+                                <rect key="frame" x="0.0" y="374" width="434" height="52.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="title">
+                                        <attributes>
+                                            <font key="NSFont" size="42" name="AvenirNext-DemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="pSW-kB-Ohl" firstAttribute="leading" secondItem="QeL-FA-t08" secondAttribute="leading" id="Dxw-9v-G6u"/>
-                            <constraint firstItem="pSW-kB-Ohl" firstAttribute="top" secondItem="QeL-FA-t08" secondAttribute="top" id="HAW-Du-YUe"/>
-                            <constraint firstAttribute="trailing" secondItem="pSW-kB-Ohl" secondAttribute="trailing" id="Koe-GK-LnT"/>
-                            <constraint firstAttribute="bottom" secondItem="pSW-kB-Ohl" secondAttribute="bottom" constant="-0.5" id="QMm-5q-dsK"/>
-                        </constraints>
-                    </view>
+                    </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="QeL-FA-t08" firstAttribute="top" secondItem="mrY-mg-ZEf" secondAttribute="top" constant="8" id="ADT-gy-2jH"/>
-                    <constraint firstItem="fH1-Q7-Mmj" firstAttribute="top" secondItem="QeL-FA-t08" secondAttribute="top" constant="8" id="MxP-UN-jMu"/>
-                    <constraint firstItem="fH1-Q7-Mmj" firstAttribute="trailing" secondItem="QeL-FA-t08" secondAttribute="trailing" constant="3" id="PYH-PD-FAg"/>
-                    <constraint firstItem="QeL-FA-t08" firstAttribute="leading" secondItem="mrY-mg-ZEf" secondAttribute="leading" constant="16" id="XfK-Ud-j3R"/>
-                    <constraint firstItem="fH1-Q7-Mmj" firstAttribute="leading" secondItem="QeL-FA-t08" secondAttribute="leading" constant="3" id="gPv-ZL-NM9"/>
-                    <constraint firstItem="fH1-Q7-Mmj" firstAttribute="bottom" secondItem="QeL-FA-t08" secondAttribute="bottom" constant="3" id="kym-6C-YmB"/>
-                    <constraint firstAttribute="bottom" secondItem="QeL-FA-t08" secondAttribute="bottom" constant="8" id="wvh-ul-8AX"/>
-                    <constraint firstAttribute="trailing" secondItem="QeL-FA-t08" secondAttribute="trailing" constant="16" id="wwB-VV-bDp"/>
+                    <constraint firstItem="xUQ-Ka-niD" firstAttribute="leading" secondItem="mrY-mg-ZEf" secondAttribute="leading" constant="16" id="F0d-ZU-tHZ"/>
+                    <constraint firstItem="xUQ-Ka-niD" firstAttribute="top" secondItem="mrY-mg-ZEf" secondAttribute="top" constant="16" id="NrW-fF-Pzu"/>
+                    <constraint firstAttribute="trailing" secondItem="xUQ-Ka-niD" secondAttribute="trailing" constant="16" id="Ycj-Fj-pwm"/>
+                    <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="xUQ-Ka-niD" secondAttribute="bottom" constant="240" id="sTw-ba-n1K"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="0SX-30-XCi"/>
             <connections>
-                <outlet property="background" destination="pSW-kB-Ohl" id="2ya-DE-J37"/>
-                <outlet property="backgroundInnerView" destination="fiA-OK-lVm" id="FOx-4r-iVM"/>
-                <outlet property="cardShadowView" destination="fH1-Q7-Mmj" id="0dO-yP-A7X"/>
-                <outlet property="cardView" destination="QeL-FA-t08" id="mEQ-67-DP8"/>
+                <outlet property="creatorNameLabel" destination="OHF-OI-SAM" id="LhU-Du-oKj"/>
+                <outlet property="itemImageView" destination="C76-EP-YSu" id="Jkb-Q7-StT"/>
+                <outlet property="itemTitleLabel" destination="FxU-it-8ff" id="E3K-MK-Qa4"/>
             </connections>
-            <point key="canvasLocation" x="140.57971014492756" y="182.8125"/>
+            <point key="canvasLocation" x="152.17391304347828" y="264.84375"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="item_placeholder" width="967" height="725"/>
+    </resources>
 </document>

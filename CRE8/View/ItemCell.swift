@@ -9,18 +9,17 @@
 import UIKit
 
 class ItemCell: UITableViewCell {
-    @IBOutlet weak var cardShadowView: UIView!
-    @IBOutlet weak var cardView: UIView!
-    @IBOutlet weak var background: UIView!
-    @IBOutlet weak var backgroundInnerView: UIView!
+    @IBOutlet weak var itemImageView: UIImageView!
+    @IBOutlet weak var creatorNameLabel: UILabel!
+    @IBOutlet weak var itemTitleLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        cardView.layer.cornerRadius = 10
-        cardShadowView.layer.cornerRadius = 10
-        background.layer.cornerRadius = 10
-        backgroundInnerView.layer.cornerRadius = 10
-        background.backgroundColor = .darkBackground
+        itemImageView.layer.cornerRadius = 10
     }
 
+    func configure(with item: Item) {
+        creatorNameLabel.text = item.id
+        itemTitleLabel.text = item.title
+    }
 }

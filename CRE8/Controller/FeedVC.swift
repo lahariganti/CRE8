@@ -15,6 +15,7 @@ class FeedVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavBar()
         setUpTableView()
         fetchItems()
     }
@@ -22,33 +23,58 @@ class FeedVC: UIViewController {
 
 
 extension FeedVC {
+    func setupNavBar() {
+        let now = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "LLLL"
+        let nameOfMonth = dateFormatter.string(from: now)
+
+        title = nameOfMonth
+
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationItem.largeTitleDisplayMode = .automatic
+
+        title = "CRE8\n\(nameOfMonth)"
+        navigationController?.navigationBar.largeTitleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: UIColor.greenVogue,
+            NSAttributedString.Key.font: UIFont(name: "AvenirNext-Bold", size: 40) ?? UIFont.preferredFont(forTextStyle: .largeTitle)
+        ]
+
+        for navItem in (navigationController?.navigationBar.subviews)! {
+            for itemSubView in navItem.subviews {
+                if let largeLabel = itemSubView as? UILabel {
+                    largeLabel.text = title
+                    largeLabel.numberOfLines = 0
+                    largeLabel.lineBreakMode = .byWordWrapping
+                }
+            }
+        }
+    }
+
     func setUpTableView() {
         let itemCell = UINib(nibName: "ItemCell", bundle: nil)
         feedTableView.register(itemCell, forCellReuseIdentifier: "ItemCell")
         feedTableView.dataSource = self
         feedTableView.delegate = self
-
-        feedTableView.backgroundColor = .greenVogue
         feedTableView.separatorStyle = .none
-        feedTableView.tableFooterView = UIView()
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 250.0
+        return 683.0
     }
 }
 
 
 extension FeedVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return items.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let item = self.items[indexPath.row]
+        let item = self.items[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! ItemCell
         cell.selectionStyle = .none
-//        cell.configure(with: item)
+        cell.configure(with: item)
         return cell
     }
 }

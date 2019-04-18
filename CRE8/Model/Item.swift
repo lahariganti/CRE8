@@ -20,17 +20,22 @@ class Item {
     var identifierSet: String?
     var amountSet: String?
     var reactions: Reaction?
-    var user: User
+    var user: User?
 
 
-    init(id: String, user: User) {
+    init(id: String) {
         self.id = id
-        self.user = user
     }
 
     static func parseItems(json: JSON) -> [Item] {
         var newItems = [Item]()
-        print(json)
+        let data: JSON = json[0]
+        for (k, v) in data {
+            print(k)
+        }
+        let newItem = Item(id: data["id"].stringValue)
+        newItem.title = data["title"].stringValue
+        newItems.append(newItem)
         return newItems
     }
 }
