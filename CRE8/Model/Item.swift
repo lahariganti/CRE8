@@ -29,13 +29,11 @@ class Item {
 
     static func parseItems(json: JSON) -> [Item] {
         var newItems = [Item]()
-        let data: JSON = json[0]
-        for (k, v) in data {
-            print(k)
+        for n in (0...json.count) {
+            let newItem = Item(id: json[n]["id"].stringValue)
+            newItem.title = json[n]["title"].stringValue
+            newItems.append(newItem)
         }
-        let newItem = Item(id: data["id"].stringValue)
-        newItem.title = data["title"].stringValue
-        newItems.append(newItem)
         return newItems
     }
 }

@@ -23,17 +23,17 @@
                         <rect key="frame" x="16" y="16" width="393" height="542.5"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="xUQ-Ka-niD">
-                                <rect key="frame" x="16" y="16" width="361" height="426.5"/>
+                                <rect key="frame" x="16" y="16" width="361" height="3032"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="item_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="C76-EP-YSu">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="294.00000000000011"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="294"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="294" id="l8n-oT-vgb"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHF-OI-SAM">
-                                        <rect key="frame" x="0.0" y="326" width="361" height="16"/>
+                                        <rect key="frame" x="0.0" y="326" width="361" height="505.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="2aG-hS-cEx"/>
                                         </constraints>
@@ -48,7 +48,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxU-it-8ff">
-                                        <rect key="frame" x="0.0" y="374" width="361" height="52.5"/>
+                                        <rect key="frame" x="0.0" y="863.5" width="361" height="2168.5"/>
                                         <attributedString key="attributedText">
                                             <fragment content="title">
                                                 <attributes>

@@ -13,7 +13,7 @@ class ItemInteractor {
     static let shared = ItemInteractor()
 
     func fetchItems(completionHandler: @escaping (([Item], Error?) -> Void)) {
-        let params: [String: Any] = [:]
+        let params: [String: Any] = ["limit" : 50, "sort": "createdAt DESC"]
 
         Alamofire.request(Database.itemRef, method: .get, parameters: params, encoding: URLEncoding.default).responseJSON { response in
             if response.result.isSuccess {
