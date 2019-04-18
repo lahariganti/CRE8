@@ -29,9 +29,15 @@ class Item {
 
     static func parseItems(json: JSON) -> [Item] {
         var newItems = [Item]()
+        for (k, v) in json[0] {
+            if k == "content" {
+                print(v)
+            }
+        }
         for n in (0...json.count) {
             let newItem = Item(id: json[n]["id"].stringValue)
             newItem.title = json[n]["title"].stringValue
+            newItem.content = json[n]["content"].stringValue
             newItems.append(newItem)
         }
         return newItems

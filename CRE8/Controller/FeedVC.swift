@@ -21,7 +21,6 @@ class FeedVC: UIViewController {
     }
 }
 
-
 extension FeedVC {
     func setupNavBar() {
         let now = Date()
@@ -59,7 +58,7 @@ extension FeedVC {
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 575.0
+        return 650.0
     }
 }
 

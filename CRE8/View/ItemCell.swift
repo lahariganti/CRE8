@@ -14,6 +14,7 @@ class ItemCell: UITableViewCell {
     @IBOutlet weak var itemImageView: UIImageView!
     @IBOutlet weak var creatorNameLabel: UILabel!
     @IBOutlet weak var itemTitleLabel: UILabel!
+    @IBOutlet weak var contentLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,5 +29,6 @@ class ItemCell: UITableViewCell {
     func configure(with item: Item) {
         creatorNameLabel.text = item.id
         itemTitleLabel.text = item.title
+        contentLabel.text = item.content
     }
 }
