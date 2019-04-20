@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import RLBAlertsPickers
 
 class FeedVC: UIViewController {
     @IBOutlet weak var feedTableView: UITableView!
@@ -23,31 +24,15 @@ class FeedVC: UIViewController {
 
 extension FeedVC {
     func setupNavBar() {
-        let now = Date()
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "LLLL"
-        let nameOfMonth = dateFormatter.string(from: now)
-
-        navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.tintColor = .greenVogue
-        navigationController?.navigationItem.largeTitleDisplayMode = .automatic
-
-        title = "CRE8\n\(nameOfMonth)"
-
-        navigationController?.navigationBar.largeTitleTextAttributes = [
-            NSAttributedString.Key.foregroundColor: UIColor.greenVogue,
-            NSAttributedString.Key.font: UIFont(name: "AvenirNext-Bold", size: 40) ?? UIFont.preferredFont(forTextStyle: .largeTitle)
-        ]
-
-        for navItem in (navigationController?.navigationBar.subviews)! {
-            for itemSubView in navItem.subviews {
-                if let largeLabel = itemSubView as? UILabel {
-                    largeLabel.text = title
-                    largeLabel.numberOfLines = 0
-                    largeLabel.lineBreakMode = .byWordWrapping
-                }
-            }
-        }
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(searchButtontapped))
+        let logoButton = UIButton(type: .custom)
+        logoButton.translatesAutoresizingMaskIntoConstraints = false
+        logoButton.widthAnchor.constraint(equalToConstant: 120).isActive = true
+        logoButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        logoButton.contentMode = .scaleAspectFill
+        logoButton.setImage(UIImage(named: "conexus"), for: .normal)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: logoButton)
     }
 
     func setUpTableView() {
@@ -62,12 +47,13 @@ extension FeedVC {
         return 650.0
     }
 
-    func scrollViewShouldScrollToTop(_ scrollView: UIScrollView) -> Bool {
-        return true
-    }
-
-    func scrollViewDidScrollToTop(_ scrollView: UIScrollView) {
-        scrollView.contentOffset.y = 0.0
+    @objc func searchButtontapped() {
+        let alert = UIAlertController(style: .actionSheet)
+        alert.addLocationPicker { location in
+           print(location)
+        }
+        alert.addAction(title: "Cancel", style: .cancel)
+        alert.show()
     }
 }
 

@@ -21,6 +21,12 @@
 		6C33C5782268029000CCAC77 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C33C5762268029000CCAC77 /* ItemCell.swift */; };
 		6C33C5792268029000CCAC77 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C33C5772268029000CCAC77 /* ItemCell.xib */; };
 		6C33C57C2268071800CCAC77 /* UIView+CRE8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C33C57B2268071800CCAC77 /* UIView+CRE8.swift */; };
+		6C33C584226A786400CCAC77 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C33C582226A786400CCAC77 /* CustomTabBar.swift */; };
+		6C33C585226A786400CCAC77 /* CustomTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C33C583226A786400CCAC77 /* CustomTabBar.xib */; };
+		6C33C588226A7FC300CCAC77 /* LibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C33C586226A7FC300CCAC77 /* LibraryVC.swift */; };
+		6C33C589226A7FC300CCAC77 /* LibraryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C33C587226A7FC300CCAC77 /* LibraryVC.xib */; };
+		6C33C58C226B317A00CCAC77 /* TrendingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C33C58A226B317A00CCAC77 /* TrendingVC.swift */; };
+		6C33C58D226B317A00CCAC77 /* TrendingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C33C58B226B317A00CCAC77 /* TrendingVC.xib */; };
 		6C8D679A224D670200B9CD81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8D6799224D670200B9CD81 /* AppDelegate.swift */; };
 		6C8D67A1224D670600B9CD81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C8D67A0224D670600B9CD81 /* Assets.xcassets */; };
 		6C8D67A4224D670600B9CD81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C8D67A2224D670600B9CD81 /* LaunchScreen.storyboard */; };
@@ -43,6 +49,12 @@
 		6C33C5762268029000CCAC77 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		6C33C5772268029000CCAC77 /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
 		6C33C57B2268071800CCAC77 /* UIView+CRE8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CRE8.swift"; sourceTree = "<group>"; };
+		6C33C582226A786400CCAC77 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		6C33C583226A786400CCAC77 /* CustomTabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabBar.xib; sourceTree = "<group>"; };
+		6C33C586226A7FC300CCAC77 /* LibraryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryVC.swift; sourceTree = "<group>"; };
+		6C33C587226A7FC300CCAC77 /* LibraryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryVC.xib; sourceTree = "<group>"; };
+		6C33C58A226B317A00CCAC77 /* TrendingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingVC.swift; sourceTree = "<group>"; };
+		6C33C58B226B317A00CCAC77 /* TrendingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingVC.xib; sourceTree = "<group>"; };
 		6C8D6796224D670200B9CD81 /* CRE8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRE8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8D6799224D670200B9CD81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C8D67A0224D670600B9CD81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -151,6 +163,12 @@
 			children = (
 				6C33C55C2267FC6A00CCAC77 /* FeedVC.swift */,
 				6C33C55D2267FC6A00CCAC77 /* FeedVC.xib */,
+				6C33C586226A7FC300CCAC77 /* LibraryVC.swift */,
+				6C33C587226A7FC300CCAC77 /* LibraryVC.xib */,
+				6C33C58A226B317A00CCAC77 /* TrendingVC.swift */,
+				6C33C58B226B317A00CCAC77 /* TrendingVC.xib */,
+				6C33C582226A786400CCAC77 /* CustomTabBar.swift */,
+				6C33C583226A786400CCAC77 /* CustomTabBar.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -234,6 +252,9 @@
 			files = (
 				6C33C5792268029000CCAC77 /* ItemCell.xib in Resources */,
 				6C8D67A4224D670600B9CD81 /* LaunchScreen.storyboard in Resources */,
+				6C33C589226A7FC300CCAC77 /* LibraryVC.xib in Resources */,
+				6C33C585226A786400CCAC77 /* CustomTabBar.xib in Resources */,
+				6C33C58D226B317A00CCAC77 /* TrendingVC.xib in Resources */,
 				6C33C55F2267FC6A00CCAC77 /* FeedVC.xib in Resources */,
 				6C8D67A1224D670600B9CD81 /* Assets.xcassets in Resources */,
 			);
@@ -252,7 +273,9 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CRE8/Pods-CRE8-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RLBAlertsPickers/RLBAlertsPickers.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -260,7 +283,9 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RLBAlertsPickers.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +324,7 @@
 			files = (
 				6C33C5642267FD6700CCAC77 /* Item.swift in Sources */,
 				6C33C5612267FCDD00CCAC77 /* ItemInteractor.swift in Sources */,
+				6C33C584226A786400CCAC77 /* CustomTabBar.swift in Sources */,
 				6C33C5672267FEAD00CCAC77 /* Association.swift in Sources */,
 				6C33C55E2267FC6A00CCAC77 /* FeedVC.swift in Sources */,
 				6C33C57C2268071800CCAC77 /* UIView+CRE8.swift in Sources */,
@@ -310,6 +336,8 @@
 				6C33C56D2267FF2300CCAC77 /* Reaction.swift in Sources */,
 				6C33C5712267FF9F00CCAC77 /* Database.swift in Sources */,
 				6C33C56B2267FEDD00CCAC77 /* Info.swift in Sources */,
+				6C33C588226A7FC300CCAC77 /* LibraryVC.swift in Sources */,
+				6C33C58C226B317A00CCAC77 /* TrendingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

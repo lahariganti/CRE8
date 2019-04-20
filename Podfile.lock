@@ -1,26 +1,34 @@
 PODS:
-  - Alamofire (4.8.1)
+  - Alamofire (4.8.2)
+  - RLBAlertsPickers (1.1.2)
   - SDWebImage (5.0.0):
     - SDWebImage/Core (= 5.0.0)
   - SDWebImage/Core (5.0.0)
-  - SwiftyJSON (4.2.0)
+  - SwiftSoup (1.7.4)
+  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Alamofire
+  - RLBAlertsPickers
   - SDWebImage
+  - SwiftSoup
   - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - RLBAlertsPickers
     - SDWebImage
+    - SwiftSoup
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  RLBAlertsPickers: 2548943b0cb16620904cbd926a645362d1b43963
   SDWebImage: 5de80a0302de9e377e62f47d2fa1304efff0e55f
-  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  SwiftSoup: 92f5b348c131aed8af04f4326db1579ab19fa08c
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 10b00fe3d5111ee646903580449bed1d8d706456
+PODFILE CHECKSUM: 9db995fa0433654c1bc298d9fc11ee7af5588b3b
 
 COCOAPODS: 1.5.3

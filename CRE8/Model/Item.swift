@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftyJSON
+import SwiftSoup
 
 class Item {
     var id: String
@@ -37,7 +38,8 @@ class Item {
         for n in (0...json.count) {
             let newItem = Item(id: json[n]["id"].stringValue)
             newItem.title = json[n]["title"].stringValue
-            newItem.content = json[n]["content"].stringValue
+            let content = json[n]["content"].stringValue
+            newItem.content = content
             let user = User()
             user.parseItemUser(with: json[n]["user"])
             newItem.user = user
