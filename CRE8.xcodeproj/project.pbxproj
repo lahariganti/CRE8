@@ -87,12 +87,12 @@
 		6C33C5652267FD6A00CCAC77 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6C33C56E2267FF4100CCAC77 /* User.swift */,
 				6C33C5632267FD6700CCAC77 /* Item.swift */,
-				6C33C5662267FEAD00CCAC77 /* Association.swift */,
 				6C33C5682267FEC700CCAC77 /* Location.swift */,
+				6C33C5662267FEAD00CCAC77 /* Association.swift */,
 				6C33C56A2267FEDD00CCAC77 /* Info.swift */,
 				6C33C56C2267FF2300CCAC77 /* Reaction.swift */,
-				6C33C56E2267FF4100CCAC77 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -224,6 +224,7 @@
 				TargetAttributes = {
 					6C8D6795224D670200B9CD81 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -485,7 +486,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gmail.gplahari.CRE8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -504,7 +505,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gmail.gplahari.CRE8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

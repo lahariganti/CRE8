@@ -9,5 +9,8 @@
 import Foundation
 
 class Location {
-    
+    var id: String?
+    var address: String?
+    var lat: String?
+    var lng: String?
 }

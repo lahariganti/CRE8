@@ -17,7 +17,7 @@ class User {
     func parseItemUser(with itemUser: JSON) {
         id = itemUser["id"].stringValue
         username = itemUser["username"].stringValue
-        avatarURL = itemUser["avatarURL"].stringValue
+        avatarURL = itemUser["avatarUrl"].stringValue
     }
 }
 

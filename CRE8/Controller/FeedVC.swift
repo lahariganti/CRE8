@@ -25,7 +25,7 @@ class FeedVC: UIViewController {
 extension FeedVC {
     func setupNavBar() {
         navigationController?.navigationBar.tintColor = .greenVogue
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(searchButtontapped))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "location_outline"), style: .plain, target: self, action: #selector(locationButtonTapped))
         let logoButton = UIButton(type: .custom)
         logoButton.translatesAutoresizingMaskIntoConstraints = false
         logoButton.widthAnchor.constraint(equalToConstant: 120).isActive = true
@@ -41,13 +41,10 @@ extension FeedVC {
         feedTableView.dataSource = self
         feedTableView.delegate = self
         feedTableView.separatorStyle = .none
+        feedTableView.backgroundColor = .greenVogue
     }
 
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 650.0
-    }
-
-    @objc func searchButtontapped() {
+    @objc func locationButtonTapped() {
         let alert = UIAlertController(style: .actionSheet)
         alert.addLocationPicker { location in
            print(location)
@@ -60,14 +57,14 @@ extension FeedVC {
 
 extension FeedVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        return items.count - 1
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = self.items[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! ItemCell
         cell.selectionStyle = .none
-        cell.configure(with: item)
+        cell.configure(with: item, contentIsHidden: true)
         return cell
     }
 }
