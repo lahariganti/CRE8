@@ -41,13 +41,13 @@ extension FeedVC {
         feedTableView.dataSource = self
         feedTableView.delegate = self
         feedTableView.separatorStyle = .none
-        feedTableView.backgroundColor = .greenVogue
+        feedTableView.backgroundColor = .greenVogueBackground
     }
 
     @objc func locationButtonTapped() {
         let alert = UIAlertController(style: .actionSheet)
         alert.addLocationPicker { location in
-           print(location)
+           print(location ?? "")
         }
         alert.addAction(title: "Cancel", style: .cancel)
         alert.show()

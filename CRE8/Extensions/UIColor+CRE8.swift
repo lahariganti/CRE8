@@ -25,6 +25,10 @@ extension UIColor {
         return UIColor(red: 4/255, green: 43/255, blue: 84/255, alpha: 1)
     }
 
+    static var greenVogueBackground: UIColor {
+        return UIColor(red: 4/255, green: 43/255, blue: 84/255, alpha: 0.1)
+    }
+
     static var killarney: UIColor {
         return UIColor(red: 48/255, green: 108/255, blue: 56/255, alpha: 1)
     }
