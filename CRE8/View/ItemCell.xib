@@ -66,7 +66,7 @@
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="item_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="udh-wi-NOt">
-                                <rect key="frame" x="0.0" y="0.0" width="380" height="200.00000000000011"/>
+                                <rect key="frame" x="0.0" y="0.0" width="380" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="QCv-Bi-rcz"/>
                                 </constraints>

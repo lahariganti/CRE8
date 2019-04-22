@@ -9,6 +9,7 @@ target 'CRE8' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'SDWebImage'
+  pod 'SVProgressHUD'
   pod 'Eureka'
   pod 'RLBAlertsPickers'
   pod 'SwiftSoup'

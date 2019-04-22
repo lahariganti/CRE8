@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import RLBAlertsPickers
+import SVProgressHUD
 
 class FeedVC: UIViewController {
     @IBOutlet weak var feedTableView: UITableView!
@@ -18,7 +19,11 @@ class FeedVC: UIViewController {
         super.viewDidLoad()
         setupNavBar()
         setUpTableView()
+        SVProgressHUD.setForegroundColor(.greenVogue)
+        SVProgressHUD.setBackgroundColor(.clear)
+        SVProgressHUD.show()
         fetchItems()
+
     }
 }
 
@@ -43,6 +48,7 @@ extension FeedVC {
         feedTableView.separatorStyle = .none
         feedTableView.backgroundColor = .greenVogueBackground
     }
+
 
     @objc func locationButtonTapped() {
         let alert = UIAlertController(style: .actionSheet)
@@ -77,6 +83,7 @@ extension FeedVC: UITableViewDelegate {
             self.items = items
             DispatchQueue.main.async {
                 self.feedTableView.reloadData()
+                SVProgressHUD.dismiss()
             }
         }
     }

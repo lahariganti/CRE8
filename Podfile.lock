@@ -1,34 +1,42 @@
 PODS:
   - Alamofire (4.8.2)
+  - Eureka (5.0.0)
   - RLBAlertsPickers (1.1.2)
   - SDWebImage (5.0.0):
     - SDWebImage/Core (= 5.0.0)
   - SDWebImage/Core (5.0.0)
+  - SVProgressHUD (2.2.5)
   - SwiftSoup (1.7.4)
   - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Alamofire
+  - Eureka
   - RLBAlertsPickers
   - SDWebImage
+  - SVProgressHUD
   - SwiftSoup
   - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Eureka
     - RLBAlertsPickers
     - SDWebImage
+    - SVProgressHUD
     - SwiftSoup
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Eureka: 0f64f477ec8ef6201c6fec143d60ff5c201cf654
   RLBAlertsPickers: 2548943b0cb16620904cbd926a645362d1b43963
   SDWebImage: 5de80a0302de9e377e62f47d2fa1304efff0e55f
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftSoup: 92f5b348c131aed8af04f4326db1579ab19fa08c
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 9db995fa0433654c1bc298d9fc11ee7af5588b3b
+PODFILE CHECKSUM: 1caf087facbb98e4ba21bd543982714f896ac049
 
 COCOAPODS: 1.5.3
