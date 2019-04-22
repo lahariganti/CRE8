@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D9E326CF82A5D3F3A8E793B20A6476AE"
-               BuildableName = "Pods_CRE8.framework"
-               BlueprintName = "Pods-CRE8"
+               BlueprintIdentifier = "F7BF12A25923A05C1F4D70D192B0AF97"
+               BuildableName = "Pods_conexus.framework"
+               BlueprintName = "Pods-conexus"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D9E326CF82A5D3F3A8E793B20A6476AE"
-            BuildableName = "Pods_CRE8.framework"
-            BlueprintName = "Pods-CRE8"
+            BlueprintIdentifier = "F7BF12A25923A05C1F4D70D192B0AF97"
+            BuildableName = "Pods_conexus.framework"
+            BlueprintName = "Pods-conexus"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

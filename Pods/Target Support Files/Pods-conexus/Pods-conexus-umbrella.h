@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_CRE8VersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_CRE8VersionString[];
+FOUNDATION_EXPORT double Pods_conexusVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_conexusVersionString[];
 

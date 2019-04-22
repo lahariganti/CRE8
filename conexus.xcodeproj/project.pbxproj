@@ -30,11 +30,13 @@
 		6C8D679A224D670200B9CD81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8D6799224D670200B9CD81 /* AppDelegate.swift */; };
 		6C8D67A1224D670600B9CD81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C8D67A0224D670600B9CD81 /* Assets.xcassets */; };
 		6C8D67A4224D670600B9CD81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C8D67A2224D670600B9CD81 /* LaunchScreen.storyboard */; };
+		A6D2D2F747E6FE2322575B1D /* Pods_conexus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3785A86185EB891A2B1728 /* Pods_conexus.framework */; };
 		C29B6059DAB755C75D1F7EFD /* Pods_CRE8.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B785E41CF1717D88A8030B14 /* Pods_CRE8.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2543A0DCBECA9441777687E5 /* Pods-CRE8.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRE8.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CRE8/Pods-CRE8.debug.xcconfig"; sourceTree = "<group>"; };
+		3EBB754066B52EDEC0A9E5D5 /* Pods-conexus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-conexus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-conexus/Pods-conexus.debug.xcconfig"; sourceTree = "<group>"; };
 		6C33C55C2267FC6A00CCAC77 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		6C33C55D2267FC6A00CCAC77 /* FeedVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedVC.xib; sourceTree = "<group>"; };
 		6C33C5602267FCDD00CCAC77 /* ItemInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInteractor.swift; sourceTree = "<group>"; };
@@ -60,8 +62,10 @@
 		6C8D67A0224D670600B9CD81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C8D67A3224D670600B9CD81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C8D67A5224D670600B9CD81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72F603A808C827ECF0897E85 /* Pods-conexus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-conexus.release.xcconfig"; path = "Pods/Target Support Files/Pods-conexus/Pods-conexus.release.xcconfig"; sourceTree = "<group>"; };
 		7BCF8CE75B6077C055D97F86 /* Pods-CRE8.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRE8.release.xcconfig"; path = "Pods/Target Support Files/Pods-CRE8/Pods-CRE8.release.xcconfig"; sourceTree = "<group>"; };
 		B785E41CF1717D88A8030B14 /* Pods_CRE8.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CRE8.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC3785A86185EB891A2B1728 /* Pods_conexus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_conexus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C29B6059DAB755C75D1F7EFD /* Pods_CRE8.framework in Frameworks */,
+				A6D2D2F747E6FE2322575B1D /* Pods_conexus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +183,8 @@
 			children = (
 				2543A0DCBECA9441777687E5 /* Pods-CRE8.debug.xcconfig */,
 				7BCF8CE75B6077C055D97F86 /* Pods-CRE8.release.xcconfig */,
+				3EBB754066B52EDEC0A9E5D5 /* Pods-conexus.debug.xcconfig */,
+				72F603A808C827ECF0897E85 /* Pods-conexus.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -186,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				B785E41CF1717D88A8030B14 /* Pods_CRE8.framework */,
+				CC3785A86185EB891A2B1728 /* Pods_conexus.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -272,7 +280,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CRE8/Pods-CRE8-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-conexus/Pods-conexus-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/RLBAlertsPickers/RLBAlertsPickers.framework",
@@ -295,7 +303,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CRE8/Pods-CRE8-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-conexus/Pods-conexus-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		85E912DCB1F4E5E8C431FA88 /* [CP] Check Pods Manifest.lock */ = {
@@ -313,7 +321,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CRE8-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-conexus-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -478,7 +486,7 @@
 		};
 		6C8D67A9224D670600B9CD81 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2543A0DCBECA9441777687E5 /* Pods-CRE8.debug.xcconfig */;
+			baseConfigurationReference = 3EBB754066B52EDEC0A9E5D5 /* Pods-conexus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -497,7 +505,7 @@
 		};
 		6C8D67AA224D670600B9CD81 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BCF8CE75B6077C055D97F86 /* Pods-CRE8.release.xcconfig */;
+			baseConfigurationReference = 72F603A808C827ECF0897E85 /* Pods-conexus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
