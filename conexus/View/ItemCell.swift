@@ -31,7 +31,7 @@ class ItemCell: UITableViewCell {
             userImageView.sd_setImage(with: URL(string: avatarURL), placeholderImage: UIImage(named: "invader"))
         }
         if let itemImageString = item.itemImageString {
-            itemImageView.sd_setImage(with: URL(string: itemImageString),placeholderImage: UIImage(named: "item_placeholder"))
+            itemImageView.sd_setImage(with: URL(string: itemImageString), placeholderImage: UIImage(named: "item_placeholder"))
         }
     }
 }

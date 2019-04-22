@@ -44,7 +44,7 @@ class Item {
                 let doc: Document = try SwiftSoup.parse(content)
                 let srcs: Elements = try doc.select("img[src]")
                 let srcsStringArray: [String?] = srcs.array().map { try? $0.attr("src").description }
-                print(newItem.title, srcsStringArray)
+                print(newItem.title as Any, srcsStringArray)
                 if !srcsStringArray.isEmpty {
                     newItem.itemImageString = srcsStringArray[0]
                 }
@@ -55,7 +55,6 @@ class Item {
             }
             newItem.user.parseItemUser(with: json[n]["user"])
             newItems.append(newItem)
-                  print("----")
         }
         return newItems
     }

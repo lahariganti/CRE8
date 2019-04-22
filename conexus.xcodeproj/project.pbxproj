@@ -55,7 +55,7 @@
 		6C33C587226A7FC300CCAC77 /* LibraryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryVC.xib; sourceTree = "<group>"; };
 		6C33C58A226B317A00CCAC77 /* TrendingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingVC.swift; sourceTree = "<group>"; };
 		6C33C58B226B317A00CCAC77 /* TrendingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingVC.xib; sourceTree = "<group>"; };
-		6C8D6796224D670200B9CD81 /* CRE8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRE8.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C8D6796224D670200B9CD81 /* conexus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = conexus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8D6799224D670200B9CD81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C8D67A0224D670600B9CD81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C8D67A3224D670600B9CD81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		6C8D678D224D670200B9CD81 = {
 			isa = PBXGroup;
 			children = (
-				6C8D6798224D670200B9CD81 /* CRE8 */,
+				6C8D6798224D670200B9CD81 /* conexus */,
 				6C8D6797224D670200B9CD81 /* Products */,
 				A31D80D1291328EC9F4D9DDC /* Pods */,
 				EB4D5221EA99A06D87A501B1 /* Frameworks */,
@@ -128,12 +128,12 @@
 		6C8D6797224D670200B9CD81 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6C8D6796224D670200B9CD81 /* CRE8.app */,
+				6C8D6796224D670200B9CD81 /* conexus.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6C8D6798224D670200B9CD81 /* CRE8 */ = {
+		6C8D6798224D670200B9CD81 /* conexus */ = {
 			isa = PBXGroup;
 			children = (
 				6C8D67A0224D670600B9CD81 /* Assets.xcassets */,
@@ -146,7 +146,7 @@
 				6C33C5652267FD6A00CCAC77 /* Model */,
 				6C33C57A2268029300CCAC77 /* View */,
 			);
-			path = CRE8;
+			path = conexus;
 			sourceTree = "<group>";
 		};
 		6CE5C95C22675AC300FEC5E7 /* Supporting Files */ = {
@@ -193,9 +193,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6C8D6795224D670200B9CD81 /* CRE8 */ = {
+		6C8D6795224D670200B9CD81 /* conexus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6C8D67A8224D670600B9CD81 /* Build configuration list for PBXNativeTarget "CRE8" */;
+			buildConfigurationList = 6C8D67A8224D670600B9CD81 /* Build configuration list for PBXNativeTarget "conexus" */;
 			buildPhases = (
 				85E912DCB1F4E5E8C431FA88 /* [CP] Check Pods Manifest.lock */,
 				6C8D6792224D670200B9CD81 /* Sources */,
@@ -207,9 +207,9 @@
 			);
 			dependencies = (
 			);
-			name = CRE8;
+			name = conexus;
 			productName = CRE8;
-			productReference = 6C8D6796224D670200B9CD81 /* CRE8.app */;
+			productReference = 6C8D6796224D670200B9CD81 /* conexus.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -228,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6C8D6791224D670200B9CD81 /* Build configuration list for PBXProject "CRE8" */;
+			buildConfigurationList = 6C8D6791224D670200B9CD81 /* Build configuration list for PBXProject "conexus" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -241,7 +241,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6C8D6795224D670200B9CD81 /* CRE8 */,
+				6C8D6795224D670200B9CD81 /* conexus */,
 			);
 		};
 /* End PBXProject section */
@@ -517,7 +517,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6C8D6791224D670200B9CD81 /* Build configuration list for PBXProject "CRE8" */ = {
+		6C8D6791224D670200B9CD81 /* Build configuration list for PBXProject "conexus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6C8D67A6224D670600B9CD81 /* Debug */,
@@ -526,7 +526,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6C8D67A8224D670600B9CD81 /* Build configuration list for PBXNativeTarget "CRE8" */ = {
+		6C8D67A8224D670600B9CD81 /* Build configuration list for PBXNativeTarget "conexus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6C8D67A9224D670600B9CD81 /* Debug */,
